@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+    </head>
+    <body>
+        <% include ./partials/header.ejs%>
+        <h1>Services List</h1>
+        <div class="well">
+            <% services.forEach( (service) => { %>
+            <div class="well">
+                <h3> Name: <%= service.name %> </h3>
+                <p> Description: <%= service.description %></p>
+                <p> Price Range: <%= service.price_range %></p>
+            </div>
+            <% })%>
+        </div>
+
+    </body
+</html>
